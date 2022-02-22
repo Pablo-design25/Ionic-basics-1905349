@@ -1,0 +1,13 @@
+ion-tab{
+    padding-top: 100px;
+}
+
+ion-grid{
+    margin: 0;
+}
+
+.centrar-texto{
+    display:flex;
+    align-self:flex-end;
+
+}

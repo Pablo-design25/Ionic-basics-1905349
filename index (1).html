@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="estilos.css">
+    <script src="index.js"></script>
+
+    <title>PRACTICA 1</title>
+
+
+</head>
+<body>
+    <h1>Hola mundo</h1>
+    <p> Inicio</p>
+    <ion-app>  <!--bloque de app Ionic-->
+        <ion-header><!--header en Ionic-->
+            <ion-toolbar mode="ios">
+                <ion-title> <!--titulo en el top de la app-->
+                    Hola, mundo xd!
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-tabs> <!-- Contenedor de pestañas-->
+            <ion-tab tab="Inicio"> <!-- Pestaña de inicio-->
+                <h1>Inicio</h1>
+
+                <ion-grid>
+                    <ion-row>
+                        <io-col class="centrar-texto" size="4">
+                            <ion-label>Escribe descripcion aqui:</ion-label>
+                        </io-col>
+                        <io-col>
+                            <ion-input placeholder="Ejemplo: Chilaquiles Verdes" type="text"></ion-input>
+                        </io-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <io-col class="centrar-texto" size="4">
+                            <ion-label>Escribe monto aqui: </ion-label>
+                        </io-col>
+                        <io-col >
+                            <ion-input placeholder="Ejemplo: $70" type="number"></ion-input>
+                        </io-col>
+                    </ion-row>
+
+
+                    <ion-row>
+                        <io-col class="centrar-texto">
+                            <ion-button id="calcularBtn" onclick="mensajeClick()">Calcular total</ion-label>
+                        </io-col>
+                    </ion-row>
+                </ion-grid> <!--Fin de cuadricula-->
+            </ion-tab>
+
+                <ion-item>
+                    <ion-lable position="floating"> Escribe tu nombre: </ion-lable>
+                     <ion-input placeholder=" Escribe texto aqui" color="primary" inputmode="numeric"></ion-input> <!--Campo de texto-->
+                </ion-item>
+                <ion-item>
+                    <ion-lable position="floating"> Escribe el precio aqui: </ion-lable>
+                     <ion-input placeholder=" Escribe precio aqui" color="primary" inputmode="numeric"></ion-input> <!--Campo de texto-->
+                </ion-item>
+                
+           
+
+            <ion-tab tab="Buscar"> <!-- Pestaña de busqueda-->
+                <h1>Buscar</h1>
+            </ion-tab>
+
+            <ion-tab tab="Perfil"> <!-- Pestaña de perfil-->
+                <h1>Perfil</h1>
+            </ion-tab>
+
+            <ion-tab-bar slot="bottom"> <!--Contenedor de botones-->
+
+                <ion-tab-button tab="Inicio"> <!--Boton de pestaña de inicio-->
+                    Inicio
+                    <ion-icon name="home-outline">
+                </ion-tab-button>
+
+                <ion-tab-button tab="Busqueda"> <!--Boton de pestaña de busqueda-->
+                    Buscar
+                    <ion-icon name="search-outline">    
+                </ion-tab-button>
+
+                <ion-tab-button tab="Perfil"> <!--Boton de pestaña de perfil-->
+                    Perfil
+                    <ion-icon name="person-circle-outline">
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-tabs>
+
+        <!-- 
+
+        <ion-content>
+            <h1>Primera vista con ionic </h1>
+        </ion-content>
+
+         <ion-footer> 
+                <ion-toolbar mode="ios"> 
+                    <ion-title> Pie de app</ion-title>
+                </ion-toolbar>
+            </ion-footer>
+        
+        -->   
+    </ion-app>
+    
+</body>
+</html>
