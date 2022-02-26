@@ -36,11 +36,13 @@ function calcularMonto() {
     
         -Asignar elemento li al elemento ol
     */
-        descripcion = descripcionInput.value; 
-    lista = document.createElement("li"); 
-    listaElementos.innerText = "descripcion: " + monto; 
+    var lista = document.getElementById("listaElementos"); /*se crea el elemento lista*/
+    descripcion = descripcionInput.value; /*a variable descripcion asignamos el valor obtenido en la entrada del html*/
 
-    console.log(descripcion);
+    elemento = document.createElement("li"); 
+    elemento.innerText = descripcion +":    Precio:" + montoInput.value; 
+    lista.insertAdjacentElement("beforeend", elemento);
+
     //Calcular Total
     monto = parseInt(montoInput.value);
     total = total + monto;
